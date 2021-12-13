@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@font-face {
+    font-family: "Romul";
+    src: url("fonts/Romul.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main>article {
+    flex: 1;
+}
+
+#main>nav,
+#main>aside {
+    flex: 0 0 20vw;
+}
+
+#main>nav {
+    order: -1;
+}
+
+footer,
+article,
+nav,
+aside {
+    padding: 1em;
+}
+
+@media screen and (max-width: 575px) {
+    #main {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1268px) {
+    .photo2 {
+        padding-top: 50px;
+    }
+}
+
+.zagolovok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.zagolovok1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 800;
+}
+
+.zagolovok2 {
+    font-family: "Romul";
+    font-size: 33px;
+    text-align: center;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.zagolovok2:before,
+.zagolovok2:after {
+    content: "";
+    display: inline-block;
+    width: 40%;
+    margin: 0 .5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    color: #d0aa8c;
+}
+
+.zagolovok2:after {
+    margin: 0 -55% 0 .5em;
+}
+
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+} */
+
+.photoContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    margin-top: 55px;
+    /* border: 1px solid black; */
+}
+
+img {
+    height: 255px;
+    width: 555px;
+}
+
+.photo1,
+.photo2 {
+    margin: 0 30px;
+    /*расстояние между блоками с фото*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    /* border: 1px solid black; */
+    width: 555px;
+}
+
+.podpisPhoto1 {
+    font-family: "Romul";
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.opis {
+    margin: 1px;
+    font-family: "Montserrat", sans-serif;
+    flex: 1;
+    text-align: center;
+    font-weight: 700;
+}
+
+.opis2_verhniyOtstup {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    flex: 1;
+    text-align: center;
+}
+
+.opis2 {
+    margin-top: -15px;
+    font-family: "Montserrat", sans-serif;
+    flex: 1;
+    text-align: center;
+    font-weight: 700;
+}
+
+.testFont {
+    font-family: "Romul", ;
+}
+
+.podpisPhoto2 {
+    font-family: "Romul";
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.opis3 {
+    margin: 1px;
+    font-family: "Montserrat", sans-serif;
+    flex: 1;
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: 700;
+}
+
+.opis3_verhniyOtstup {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12.5px;
+    flex: 1;
+    text-align: center;
+}
+
+.opis4 {
+    margin-top: -10px;
+    font-family: "Montserrat", sans-serif;
+    flex: 1;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12.5px;
+}
+
+hr {
+    margin-bottom: 15px;
+}
+
+.button_under_photo {
+    height: 35px;
+    width: 235px;
+    border: 3px solid black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.header {
+    height: 173px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.verh {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.logo {
+    height: 75px;
+    width: 200px;
+    margin-left: -15px;
+}
+
+.poloski {
+    height: 58px;
+    background: linear-gradient(45deg, #2f2c34 1%, #423b3e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 45px;
+}
+
+.phone {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    font-stretch: wider;
+    font-family: "Montserrat", medium;
+}
+
+.phoneContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-right: 88px;
+}
+
+.phoneContainer_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.viberWhatsup {
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "Montserrat", medium;
+    color: #d0aa8c;
+    padding-right: 37px;
+}
+
+.viberWhatsup::after {
+    content: "";
+    display: inline-block;
+    width: 45%;
+    margin: 0 .5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    color: #d0aa8c;
+}
+
+.viberWhatsup::after {
+    margin: 0 -55% 0 .5em;
+}
+
+.btnZakaz {
+    height: 28px;
+    width: 186px;
+    border: 1px solid black;
+    font-family: "Montserrat", Regular;
+    font-size: 15px;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btnTarif {
+    height: 28px;
+    width: 186px;
+    border: 1px solid black;
+    font-family: "Montserrat", Regular;
+    font-size: 15px;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btnContainer {
+    padding-left: 55px;
+    margin-left: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer2 {
+    margin-left: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verhContainer {
+    display: flex;
+    flex: 1;
+    max-width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.btnZakaz:hover {
+    color: white;
+    background-color: #d0aa8c;
+    border: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-family: "Romul";
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    position: relative;
+    padding: 0 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.polos:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background: white;
+}
+
+li:last-child:after {
+    display: none;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Romul";
+    font-size: 12px;
+}
+
+
+/*--------------------------------------------------------------*/
+
+
+/* скрываем чекбокс */
+
+.hamburger-menu {
+    display: flex;
+    visibility: hidden;
+}
+
+
+/* #menu__toggle {
+    opacity: 0;
+    padding-right: 50px;
+} */
+
+
+/* @media screen and (max-width: 1200px) {
+    .menuContainer {
+        visibility: hidden;
+    }
+    .menu__btn {
+        visibility: visible;
+    }
+} */
+
+@media screen and (max-width: 1200px) {
+    .menuContainer {
+        visibility: hidden;
+    }
+    .btnContainer,
+    .btnContainer2 {
+        visibility: hidden;
+    }
+    .phoneContainer {
+        visibility: hidden;
+    }
+    .logo {
+        position: absolute;
+        margin-left: 1px;
+    }
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+    #menu__toggle {
+        opacity: 0;
+        padding-right: 50px;
+    }
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 125px;
+        left: 20px;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        z-index: 1;
+        visibility: visible;
+    }
+    .kroshki {
+        visibility: hidden;
+    }
+}
+
+
+/* стилизуем кнопку */
+
+
+/* .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 125px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 1;
+    visibility: visible;
+} */
+
+
+/* добавляем "гамбургер" */
+
+
+/* .menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+} */
+
+
+/* контейнер меню */
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background: linear-gradient(45deg, #2f2c34 1%, #423b3e 100%);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+
+/* элементы меню */
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Romul', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #d0aa8c;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menuContainer {
+    display: flex;
+}
+
+.kroshki {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid #80808048;
+    width: 1021px;
+}
+
+.kroshka {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: black;
+    font-size: 12px;
+    font-family: "Montserrat", Regular;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.razdelitel {
+    padding: 0 5px;
+    margin-top: -5px;
+}
+
+.kroshka:hover {
+    color: #d0aa8c;
+}
+
+.razdelitel:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background: black;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    height: 338px;
+    background: url(img/footer.png) no-repeat;
+    background-size: 100% 100%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.footerContainer {
+    display: flex;
+}
+
+.footerContent1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.Spisok {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.Spisok>li {
+    margin-bottom: 5px;
+}
+
+.ourCars1 {
+    display: flex;
+    font-family: "Romul";
+    color: white;
+    text-transform: lowercase;
+    margin-left: 40px;
+}
+
+.ourCars2 {
+    display: flex;
+    font-family: "Romul";
+    color: white;
+    text-transform: lowercase;
+    margin-left: -7px;
+}
+
+.ourCars3 {
+    display: flex;
+    font-family: "Romul";
+    color: white;
+    text-transform: lowercase;
+    margin-left: -55px;
+}
+
+.poloskaCars1 {
+    margin-right: 143px;
+    margin-top: -1px;
+    display: flex;
+}
+
+.poloskaCars2 {
+    margin-right: 153px;
+    margin-top: -1px;
+}
+
+.poloskaCars3 {
+    margin-right: 138px;
+    margin-top: -1px;
+}
+
+.elem {
+    font-family: "Romul";
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: "Montserrat", Regular;
+    cursor: pointer;
+    color: gray;
+}
+
+.elem:hover {
+    color: white;
+}
+
+.razdelFooterContent {
+    margin-top: 130px;
+    margin-left: 25px;
+}
+
+.razdelFooterContentLast {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.blockContakti {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 186px;
+    height: 120px;
+    background: rgba(128, 128, 128, 0.295);
+}
+
+.order {
+    font-family: "Montserrat", Regular;
+    color: gray;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.tarif {
+    font-family: "Montserrat", Regular;
+    color: gray;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footerContent4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 73px;
+}
+
+.footerPhone {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-stretch: wider;
+    font-family: "Montserrat", medium;
+    margin-bottom: -5px;
+}
+
+.footerViberWhatsup {
+    margin-top: 3px;
+    margin-right: -80px;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: "Montserrat", medium;
+    color: white;
+    padding-right: 37px;
+}
+
+.ikonki {
+    display: flex;
+    justify-content: space-around;
+    height: 28px;
+    width: 112px;
+    margin: 0 -2px;
+}
+
+.social {
+    height: 32px;
+    width: 32px;
+    margin: 0 2px;
+}
+
+.tarif:hover,
+.order:hover {
+    color: white;
+}
+
+.rights {
+    color: gray;
+    font-family: "Montserrat", medium;
+    font-size: 12px;
+}
